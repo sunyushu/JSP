@@ -1,0 +1,61 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<filter-name>IsLoginFilter</filter-name>
+  	<display-name>IsLoginFilter</display-name>
+  	<description></description>
+  	<filter-class>com.filter.IsLoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>IsLoginFilter</filter-name>
+  	<url-pattern>/film.jsp</url-pattern>
+  </filter-mapping>
+
+  <servlet>
+  	<servlet-name>LoginServelet</servlet-name>
+  	<display-name>LoginServelet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateServlet</servlet-name>
+  	<display-name>UpdateServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.UpdateServelt</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateServelt</servlet-name>
+  	<display-name>UpdateServelt</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.UpdateServelt</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddServelt</servlet-name>
+  	<display-name>AddServelt</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.AddServelt</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>LoginServelet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateServlet</servlet-name>
+  	<url-pattern>/UpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateServelt</servlet-name>
+  	<url-pattern>/UpdateServelt</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddServelt</servlet-name>
+  	<url-pattern>/AddServelt</url-pattern>
+  </servlet-mapping>
+  
+ 
+</web-app>

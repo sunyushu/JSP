@@ -1,0 +1,10 @@
+使用数据库:sakila
+数据库用户名：root
+密码配置：123456
+
+mvn compile
+mvn tomcat:run
+
+打开浏览器并在浏览器中输入http://localhost:8080/trucks/login.jsp
+
+
